@@ -62,6 +62,12 @@ ul {
 li {
   margin-top: 1rem;
 }
+.cart-item{
+  border-bottom: 00.1rem rgb(224, 220, 220) solid;
+}
+input,
+select,
+textarea,
 button {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -70,9 +76,20 @@ button {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f8f8f8;
-  cursor: pointer;
 }
+button {
+  background-color: white;
+  cursor: pointer;
+  border: none;
+}
+select{
+  border: none;
+  padding: 0.5rem;
+  background-color: lightgray;
+}
+input:hover,
+select:hover,
+textarea:hover,
 button:hover {
   border: 0.1rem #404040 solid;
 }
@@ -92,7 +109,20 @@ a.brand {
   font-size: 3rem;
   font-weight: bold;
 }
+.fa-shopping-cart{
+  position: relative;
+}
+.badge {
+  position: absolute;
+  background-color: #f02020;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+  left: 25%;
+}
 .row {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -110,10 +140,17 @@ a.brand {
 .col-2 {
   flex: 2 1 50rem;
 }
+.min-30 {
+  min-width: 30rem;
+}
 
 /* Image */
 img {
   border-radius: 0.5rem;
+}
+img.small {
+  max-width: 5rem;
+  width: 100%;
 }
 img.medium {
   max-width: 29rem;
@@ -167,7 +204,8 @@ img.large {
   color: #a02020;
   background-color: #ffe0e0;
 }
-/* Spinner */
-.loading{
-  font-size: 48px;
+
+.quantity{
+  padding: 1rem;
+  background-color: lightgray;
 }
