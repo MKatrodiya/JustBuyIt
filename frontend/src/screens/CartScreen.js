@@ -67,7 +67,7 @@ export default function CartScreen(props) {
                       ))}
                     </select>
                   </div>
-                  <div>${item.price}</div>
+                  <div>&#x20B9;{item.price}</div>
                   <div>
                     <button
                       type="button"
